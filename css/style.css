@@ -1,0 +1,136 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-screen {
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/horntail-entrance.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.player {
+    overflow: hidden;
+    position: absolute;
+    /* background-color: red; */
+}
+
+.player_static {
+    animation: player-static 1s infinite steps(1);
+}
+
+.player_movement {
+    animation: player-movement 0.6s infinite steps(1);
+}
+
+.player_attack {
+    animation: player-attack 0.6s infinite steps(1);
+}
+
+@keyframes player-attack {
+    0% {
+        transform: translate3d(-11px, -537px, 0);
+    }
+
+    14.2857142857% {
+        transform: translate3d(-198px, -537px, 0);
+    }
+
+    28.5714285714% {
+        transform: translate3d(-390px, -521px, 0);
+    }
+
+    42.8571428571% {
+        transform: translate3d(-580px, -521px, 0);
+    }
+
+    57.1428571428% {
+        transform: translate3d(-750px, -524px, 0);
+    }
+
+    71.4285714285% {
+        transform: translate3d(-922px, -532px, 0);
+    }
+
+    85.7142857142% {
+        transform: translate3d(-1092px, -536px, 0);
+    }
+
+    100% {
+        transform: translate3d(-11px, -537px, 0);
+    }
+}
+
+@keyframes player-static {
+    0% {
+        transform: translate3d(-7px, -17px, 0);
+    }
+
+    12.5% {
+        transform: translate3d(-192px, -17px, 0);
+    }
+
+    25% {
+        transform: translate3d(-376px, -17px, 0);
+    }
+
+    37.5% {
+        transform: translate3d(-564px, -17px, 0);
+    }
+
+    50% {
+        transform: translate3d(-750px, -17px, 0);
+    }
+
+    62.5% {
+        transform: translate3d(-936px, -17px, 0);
+    }
+
+    75% {
+        transform: translate3d(-1126px, -17px, 0);
+    }
+
+    87.5% {
+        transform: translate3d(-1315px, -17px, 0);
+    }
+
+    100% {
+        transform: translate3d(-7px, -17px, 0);
+    }
+}
+
+@keyframes player-movement {
+
+    0% {
+        transform: translate3d(-7px, -175px, 0);
+    }
+
+    16.6666666667% {
+        transform: translate3d(-204px, -177px, 0);
+    }
+
+    33.3333333333% {
+        transform: translate3d(-402px, -176px, 0);
+    }
+
+    50% {
+        transform: translate3d(-624px, -174px, 0);
+    }
+
+    66.6666666667% {
+        transform: translate3d(-816px, -176px, 0);
+    }
+
+    83.333333333% {
+        transform: translate3d(-1010px, -177px, 0);
+    }
+
+    100% {
+        transform: translate3d(-7px, -175px, 0);
+    }
+}
